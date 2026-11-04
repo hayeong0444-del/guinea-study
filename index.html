@@ -121,7 +121,7 @@ body:not(:has(#study.active)) .photo-side { display:none; }
   .photo-progress-fill { transition:none; }
 }
 
-/* Portrait screens: checklist immediately follows the guinea pig timer. */
+/* Portrait screens: Pomodoro controls immediately follow the guinea pig timer, then checklist. */
 @media (orientation:portrait), (max-width:899px) {
   html,body { height:auto; overflow-x:hidden; overflow-y:auto; }
   .app-layout { display:flex; flex-direction:column; height:auto; }
@@ -129,8 +129,8 @@ body:not(:has(#study.active)) .photo-side { display:none; }
   .photo-timer-group { top:57%; }
   .tools-side { display:flex; flex-direction:column; width:100%; padding-top:12px; }
   .tools-side .tabs { display:none; }
-  .tools-side #check { display:block!important; order:1; }
-  .tools-side #study { display:block!important; order:2; }
+  .tools-side #study { display:block!important; order:1; }
+  .tools-side #check { display:block!important; order:2; }
   .tools-side #stopwatch { display:block!important; order:3; }
   .tools-side #record { display:block!important; order:4; }
   .tools-side .extras { display:block!important; order:5; }
